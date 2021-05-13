@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".Step2_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+         />
+
+    <!-- Langkah 1 -->
+    <TextView
+        android:id="@+id/langkah2"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Langkah 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_gender"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_below="@+id/langkah2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gender"/>
+
+
+    <!-- Sebelum masuk ke aplikasi, yuk lengkapi biodatamu dulu~ -->
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_gender"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|center"
+        android:text="Kamu adalah seorang..."
+        android:textColor="@color/colorPureHitam"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <Button
+            android:id="@+id/btn_gPria"
+            android:layout_width="110dp"
+            android:layout_height="113dp"
+            android:background="@drawable/btn_opsi_gender"
+            android:elevation="7dp"
+            android:drawableTop="@mipmap/ic_male"
+            android:padding="20dp"
+            android:text="Pria"
+            android:textColor="@color/colorTextBiru" />
+
+
+        <Button
+            android:id="@+id/btn_gWanita"
+            android:layout_width="110dp"
+            android:layout_height="113dp"
+            android:layout_toRightOf="@+id/btn_gPria"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_opsi_gender"
+            android:drawableTop="@mipmap/ic_female"
+            android:elevation="7dp"
+            android:text="Wanita"
+            android:textColor="@color/colorPink" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

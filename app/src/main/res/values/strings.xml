@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Diet App</string>
+    <string name="title_kalori">Kalori</string>
+    <string name="title_resep">Resep</string>
+    <string name="title_profil">Profil</string>
+    <string name="deskripsi">Hitung kalorimu dan temukan resep makananmu untuk hari ini</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit a donec nibh eget ultricies diam egestas.</string>
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+    <string name="konten_info_lvl_aktifitas">- Tidak pernah olahraga (minim aktivitas fisik/Sedenter)\n
+
+- Olahraga Ringan (1-3 Hari Seminggu/Sedikit Aktif)\n
+
+- Olahraga Sedang (3-5 Hari Seminggu/Cukup Aktif)\n
+
+- Olahraga Berat (6-7 Hari Seminggu/Sangat Aktif)\n
+
+- Olahraga 2x Sehari (Olahraga yang sangat aktif seharinya atau perkerjaan sehari-hari menuntut fisik)</string>
+    <string-array name="level_aktifitas">
+        <item>Tidak Olahraga</item>
+        <item>Olahraga Ringan</item>
+        <item>Olahraga Sedang</item>
+        <item>Olahraga Berat</item>
+        <item>Olahraga 2x Sehari</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>

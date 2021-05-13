@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/step6_layout"
+    android:background="@color/bg_white"
+    tools:context=".Step6_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <!-- Langkah 6 -->
+    <TextView
+        android:id="@+id/langkah6"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Langkah 6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_activity"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_below="@+id/langkah6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity"/>
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_activity"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|center"
+        android:text="Pilih Level Activitasmu~"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_info_black_24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt7"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_activity"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Spinner
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_levelact"
+            android:entries="@array/level_aktifitas"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            />
+
+        <Button
+            android:id="@+id/btn_lanjut"
+            android:layout_width="258dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/list_levelact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_radius_style"
+            android:elevation="4dp"
+            android:text="selanjutnya"
+            android:textColor="@color/colorPutih" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

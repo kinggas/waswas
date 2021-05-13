@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".Finish_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <!-- Selesai -->
+    <TextView
+        android:id="@+id/selesai"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Selesai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_congrats"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_below="@+id/selesai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/congratulation"/>
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_congrats"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|center"
+        android:text="Selamat kamu telah menyelesaikan biodatamu! Ayo cek profilmu!"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_cekprofil"
+        android:layout_width="258dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/txt9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_radius_style"
+        android:elevation="4dp"
+        android:text="Cek Profil"
+        android:textColor="@color/colorPutih" />
+
+
+</RelativeLayout>

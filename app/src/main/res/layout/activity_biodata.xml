@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".biodataActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="60dp">
+
+        <FrameLayout
+            android:id="@+id/containerBiodata"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarBiodata"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="0.5"></FrameLayout>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewBiodata"-->
+<!--            android:layout_width="157dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/toolbarBiodata"-->
+<!--            app:srcCompat="@drawable/avatar" />-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBiodata"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPutih"
+            android:minHeight="?attr/actionBarSize"
+            android:padding="0dp"
+            android:strokeWidth="5"
+            android:strokeColor="#C4C4C4"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleMargin="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_editBiodata"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_radius_style3"
+                    android:text="Edit"
+                    android:textColor="@color/colorPutih" />
+
+                <TextView
+                    android:id="@+id/toolbarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Biodata"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:textColor="@color/colorTextBiru"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="179dp"
+                    tools:layout_editor_absoluteY="18dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    //bottom navigation view-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"
+            app:layout_dodgeInsetEdges="bottom"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

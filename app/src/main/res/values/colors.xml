@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#339ABA</color>
+    <color name="colorPrimaryDark">#25728a</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTextHitam">#403C3C</color>
+    <color name="colorTextBiru">#3FB8DE</color>
+    <color name="colorPureHitam">#000000</color>
+    <color name="colorPutih">#ffffff</color>
+    <color name="colorPink">#D81B60</color>
+
+    <color name="grey">#718096</color>
+
+    <color name="bg_white">@color/colorPutih</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".Step4_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <!-- Langkah 4 -->
+    <TextView
+        android:id="@+id/langkah4"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Langkah 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_weight"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_below="@+id/langkah4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/weight"/>
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_weight"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|center"
+        android:text="Berapa berat badanmu sekarang?"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:background="@drawable/roundedcorner"
+            android:layout_width="258dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:hint="Masukkan berat badanmu (kg)"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:id="@+id/editText_bb"/>
+
+        <Button
+            android:id="@+id/btn_lanjut"
+            android:layout_width="258dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/editText_bb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_radius_style"
+            android:elevation="4dp"
+            android:text="selanjutnya"
+            android:textColor="@color/colorPutih" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

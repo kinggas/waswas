@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".editBiodataActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBiodata"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPutih"
+            android:minHeight="?attr/actionBarSize"
+            android:padding="0dp"
+            android:strokeWidth="5"
+            android:strokeColor="#C4C4C4"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleMargin="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbarTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Edit Biodata"
+                    android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                    android:textColor="@color/colorTextBiru"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_editBiodata"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_radius_style3"
+                    android:text="Simpan"
+                    android:textColor="@color/colorPutih" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbarBiodata"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/textViewEditBiodataNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Nama"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#1A202C"
+                android:textSize="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                app:fontFamily="@font/roboto_medium" />
+
+            <EditText
+                android:background="@drawable/roundedcorner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editBiodataNama"
+                android:textColor="#000"
+                android:text="Cassia Vera Diphiperidine"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/textViewEditBiodataJenisKelamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Jenis Kelamin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#1A202C"
+                android:textSize="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:fontFamily="@font/roboto_medium" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedcorner"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp">
+                <Spinner
+                    android:id="@+id/spinnerGenderEditBiodata"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#000"
+                    android:overlapAnchor="false"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewEditBiodataTanggalLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Tanggal Lahir"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#1A202C"
+                android:textSize="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:fontFamily="@font/roboto_medium" />
+            <EditText
+                android:background="@drawable/roundedcorner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editBiodataTanggalLahir"
+                android:textColor="#000"
+                android:text="05/07/2000"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/textViewEditBiodataTinggiBadan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Tinggi Badan (cm)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#1A202C"
+                android:textSize="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:fontFamily="@font/roboto_medium" />
+            <EditText
+                android:background="@drawable/roundedcorner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editBiodataTinggiBadan"
+                android:textColor="#000"
+                android:text="163"
+                android:inputType="number"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/textViewEditBiodataBeratBadan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Berat Badan (kg)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#1A202C"
+                android:textSize="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:fontFamily="@font/roboto_medium" />
+            <EditText
+                android:background="@drawable/roundedcorner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editBiodataBeratBadan"
+                android:textColor="#000"
+                android:text="58"
+                android:inputType="number"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_biodata">
+
+                <TextView
+                    android:id="@+id/textViewEditBiodataLevelAktivitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Level Aktivitas"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#1A202C"
+                    android:textSize="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:fontFamily="@font/roboto_medium" />
+
+                <ImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:paddingTop="8dp"
+                    android:layout_toRightOf="@+id/textViewEditBiodataLevelAktivitas"
+                    app:srcCompat="@drawable/ic_info_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedcorner"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp">
+                <Spinner
+                    android:id="@+id/editBiodataUmurLevelAktivitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="#000"
+                    android:overlapAnchor="false"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recyclerView2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/toolbarBiodata"-->
+<!--            android:paddingBottom="260dp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

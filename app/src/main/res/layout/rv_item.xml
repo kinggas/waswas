@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <!--    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--        android:id="@+id/card_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginLeft="0dp"-->
+    <!--        android:layout_marginRight="0dp"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        card_view:cardCornerRadius="4dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="12dp"-->
+    <!--                android:textColor="#000"-->
+    <!--                android:text="TextView:"/>-->
+
+    <!--            <EditText-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:id="@+id/editid"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:paddingLeft="10dp"-->
+    <!--                android:textColor="#000"-->
+    <!--                android:text="hello"-->
+    <!--                />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </android.support.v7.widget.CardView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewBiodataAtas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="dummy text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#1A202C"
+            android:textSize="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:fontFamily="@font/roboto_medium" />
+
+        <TextView
+            android:id="@+id/textViewBiodataBawah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="dummy text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#718096"
+            android:textSize="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="16dp"
+            app:fontFamily="@font/roboto_regular" />
+    </LinearLayout>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_editBiodata"-->
+    <!--            android:layout_width="258dp"-->
+    <!--            android:layout_height="37dp"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="@drawable/btn_radius_style"-->
+    <!--            android:elevation="4dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Edit Biodata"-->
+    <!--            android:textColor="@color/colorPutih"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</RelativeLayout>

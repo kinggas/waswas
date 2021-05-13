@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".WelcomeActivity">
+
+    <!-- Selamat Datang di Aplikasi -->
+    <TextView
+        android:id="@+id/selamat_dat"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Selamat Datang Di Aplikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_welcome"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_below="@+id/selamat_dat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/welcome"/>
+
+    <!--tentang aplikasi-->
+    <TextView
+        android:id="@+id/lorem_ipsum"
+        android:layout_width="244dp"
+        android:layout_height="94dp"
+        android:layout_below="@+id/img_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal|center"
+        android:text="@string/deskripsi" />
+
+    <!-- Sebelum masuk ke aplikasi, yuk lengkapi biodatamu dulu~ -->
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lorem_ipsum"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center"
+        android:text="Sebelum masuk ke aplikasi, yuk lengkapi biodatamu dulu~"
+        android:textColor="@color/colorPureHitam"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_lengkapi"
+        android:layout_width="258dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_radius_style"
+        android:elevation="4dp"
+        android:text="Lengkapi Biodatamu"
+        android:textColor="@color/colorPutih" />
+
+</RelativeLayout>
